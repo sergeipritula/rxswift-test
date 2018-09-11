@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GunInfoView" customModule="rxswiftExampleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85 mm D-5T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo2-TM-x1y">
+                    <rect key="frame" x="10" y="10" width="337" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="gun_aim_time, sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKX-C3-zGF">
+                    <rect key="frame" x="10" y="39" width="140" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvG-sA-WJl">
+                    <rect key="frame" x="412" y="39" width="25" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="gun_caliber, mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcp-Ef-ZYX">
+                    <rect key="frame" x="10" y="70" width="124.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1i-w3-a2s">
+                    <rect key="frame" x="416" y="70" width="21" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="gun_disperion, mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQQ-lh-2YT">
+                    <rect key="frame" x="10" y="101" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-PQ-RKU">
+                    <rect key="frame" x="402" y="101" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Damage, HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKr-AW-BVn">
+                    <rect key="frame" x="10" y="132" width="209" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="160/160/280" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNV-eE-q5h">
+                    <rect key="frame" x="339" y="132" width="98" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Penetration, mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMy-f5-x2m">
+                    <rect key="frame" x="10" y="163" width="126" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120/161/43" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-fP-eyu">
+                    <rect key="frame" x="352" y="163" width="85" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Rate of fire, rounds/min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da3-SC-5gF">
+                    <rect key="frame" x="10" y="194" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZb-hO-HSz">
+                    <rect key="frame" x="395" y="194" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="vehicle_price_xp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJq-dT-BVz">
+                    <rect key="frame" x="10" y="235" width="376" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWg-dt-OBN">
+                    <rect key="frame" x="10" y="266" width="381" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIw-Lg-3TY">
+                    <rect key="frame" x="426" y="235" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3X4-It-vKn">
+                    <rect key="frame" x="426" y="266" width="11" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="emE-pp-Hns">
+                    <rect key="frame" x="396" y="238" width="20" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="1ce-vI-68c"/>
+                        <constraint firstAttribute="width" constant="20" id="rIa-lf-VeZ"/>
+                    </constraints>
+                </imageView>
+                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="silver_coins" translatesAutoresizingMaskIntoConstraints="NO" id="kIr-S7-CmR">
+                    <rect key="frame" x="401" y="271.5" width="15" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="Dcq-p8-g4K"/>
+                        <constraint firstAttribute="height" constant="10" id="gIw-fb-zOO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bcp-Ef-ZYX" firstAttribute="top" secondItem="pKX-C3-zGF" secondAttribute="bottom" constant="10" id="5bf-qc-RLW"/>
+                <constraint firstItem="3X4-It-vKn" firstAttribute="centerY" secondItem="kIr-S7-CmR" secondAttribute="centerY" id="66g-6t-crQ"/>
+                <constraint firstItem="pKX-C3-zGF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="6ZT-S1-U7W"/>
+                <constraint firstItem="kIr-S7-CmR" firstAttribute="leading" secondItem="iWg-dt-OBN" secondAttribute="trailing" constant="10" id="7Aa-J9-QNt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hIw-Lg-3TY" secondAttribute="trailing" constant="10" id="8YY-TU-QFE"/>
+                <constraint firstItem="bcp-Ef-ZYX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="9nz-fI-G3l"/>
+                <constraint firstItem="CXo-fP-eyu" firstAttribute="centerY" secondItem="kMy-f5-x2m" secondAttribute="centerY" id="AEw-JL-efE"/>
+                <constraint firstItem="Vo2-TM-x1y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Acd-ne-dbz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JNV-eE-q5h" secondAttribute="trailing" constant="10" id="BFU-J1-ZJC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vo2-TM-x1y" secondAttribute="trailing" constant="100" id="BoR-8a-n06"/>
+                <constraint firstItem="2ac-PQ-RKU" firstAttribute="centerY" secondItem="WQQ-lh-2YT" secondAttribute="centerY" id="Cjv-OE-3iW"/>
+                <constraint firstItem="RvG-sA-WJl" firstAttribute="centerY" secondItem="pKX-C3-zGF" secondAttribute="centerY" id="FV0-Nk-ozN"/>
+                <constraint firstItem="Da3-SC-5gF" firstAttribute="top" secondItem="kMy-f5-x2m" secondAttribute="bottom" constant="10" id="HAz-nv-BtV"/>
+                <constraint firstItem="JNV-eE-q5h" firstAttribute="leading" secondItem="kKr-AW-BVn" secondAttribute="trailing" constant="120" id="KKd-Ta-Ruz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fZb-hO-HSz" secondAttribute="trailing" constant="10" id="Kas-gR-REE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CXo-fP-eyu" secondAttribute="trailing" constant="10" id="NT4-Qu-Krh"/>
+                <constraint firstItem="hIw-Lg-3TY" firstAttribute="leading" secondItem="emE-pp-Hns" secondAttribute="trailing" constant="10" id="Ovv-j6-YkU"/>
+                <constraint firstItem="PJq-dT-BVz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="PAw-Gg-UfO"/>
+                <constraint firstItem="hIw-Lg-3TY" firstAttribute="centerY" secondItem="emE-pp-Hns" secondAttribute="centerY" id="S9I-dV-9gk"/>
+                <constraint firstItem="iWg-dt-OBN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="SFp-Wf-5jp"/>
+                <constraint firstItem="WQQ-lh-2YT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="SQR-tb-rr8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2ac-PQ-RKU" secondAttribute="trailing" constant="10" id="TbT-Pe-Zyp"/>
+                <constraint firstItem="kKr-AW-BVn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Vqv-Rr-ZKU"/>
+                <constraint firstItem="kIr-S7-CmR" firstAttribute="centerY" secondItem="iWg-dt-OBN" secondAttribute="centerY" id="WHc-CU-ZRY"/>
+                <constraint firstItem="fZb-hO-HSz" firstAttribute="centerY" secondItem="Da3-SC-5gF" secondAttribute="centerY" id="XRf-gj-7gn"/>
+                <constraint firstItem="2ac-PQ-RKU" firstAttribute="leading" secondItem="WQQ-lh-2YT" secondAttribute="trailing" constant="10" id="Yfn-1V-Rwo"/>
+                <constraint firstItem="kMy-f5-x2m" firstAttribute="top" secondItem="kKr-AW-BVn" secondAttribute="bottom" constant="10" id="ZD6-Ya-47p"/>
+                <constraint firstItem="3X4-It-vKn" firstAttribute="leading" secondItem="kIr-S7-CmR" secondAttribute="trailing" constant="10" id="aYt-tQ-yN1"/>
+                <constraint firstItem="pKX-C3-zGF" firstAttribute="top" secondItem="Vo2-TM-x1y" secondAttribute="bottom" constant="8" id="c1g-9C-rbg"/>
+                <constraint firstItem="m1i-w3-a2s" firstAttribute="centerY" secondItem="bcp-Ef-ZYX" secondAttribute="centerY" id="ekt-cT-BSL"/>
+                <constraint firstItem="Vo2-TM-x1y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="erg-ua-cZe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RvG-sA-WJl" secondAttribute="trailing" constant="10" id="f4d-8C-tTN"/>
+                <constraint firstItem="Da3-SC-5gF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="fuj-Ud-LBi"/>
+                <constraint firstItem="kKr-AW-BVn" firstAttribute="top" secondItem="WQQ-lh-2YT" secondAttribute="bottom" constant="10" id="hoy-RB-mj2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3X4-It-vKn" secondAttribute="trailing" constant="10" id="ii1-Q6-ShN"/>
+                <constraint firstItem="emE-pp-Hns" firstAttribute="centerY" secondItem="PJq-dT-BVz" secondAttribute="centerY" id="mXA-mE-z25"/>
+                <constraint firstItem="kMy-f5-x2m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="rgO-s9-jLo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iWg-dt-OBN" secondAttribute="bottom" constant="13" id="ryv-xt-P88"/>
+                <constraint firstItem="fZb-hO-HSz" firstAttribute="leading" secondItem="Da3-SC-5gF" secondAttribute="trailing" constant="10" id="s5c-U6-3KG"/>
+                <constraint firstItem="WQQ-lh-2YT" firstAttribute="top" secondItem="bcp-Ef-ZYX" secondAttribute="bottom" constant="10" id="sYH-ZL-cjA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="m1i-w3-a2s" secondAttribute="trailing" constant="10" id="spF-t1-gvF"/>
+                <constraint firstItem="JNV-eE-q5h" firstAttribute="centerY" secondItem="kKr-AW-BVn" secondAttribute="centerY" id="uVK-Xn-sw5"/>
+                <constraint firstItem="iWg-dt-OBN" firstAttribute="top" secondItem="PJq-dT-BVz" secondAttribute="bottom" constant="10" id="v9T-h9-q0F"/>
+                <constraint firstItem="emE-pp-Hns" firstAttribute="leading" secondItem="PJq-dT-BVz" secondAttribute="trailing" constant="10" id="xOS-ug-rOq"/>
+                <constraint firstItem="PJq-dT-BVz" firstAttribute="top" secondItem="Da3-SC-5gF" secondAttribute="bottom" constant="20" id="xgd-ef-X3L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="aimTimeLabel" destination="RvG-sA-WJl" id="ed8-IU-cQf"/>
+                <outlet property="caliberLabel" destination="m1i-w3-a2s" id="awl-Me-d9G"/>
+                <outlet property="damageLabel" destination="JNV-eE-q5h" id="Or5-U3-fo6"/>
+                <outlet property="dispersionLabel" destination="2ac-PQ-RKU" id="frm-GN-rfO"/>
+                <outlet property="isPremiumImageView" destination="kIr-S7-CmR" id="qhr-NM-ljg"/>
+                <outlet property="nameLabel" destination="Vo2-TM-x1y" id="7Qm-Bd-mvm"/>
+                <outlet property="penetrationLabel" destination="CXo-fP-eyu" id="PDS-kM-FZr"/>
+                <outlet property="priceLabel" destination="iWg-dt-OBN" id="p2w-d7-uNZ"/>
+                <outlet property="rateOfFireLabel" destination="fZb-hO-HSz" id="DKj-lb-jaQ"/>
+                <outlet property="vehiclePriceXPLabel" destination="hIw-Lg-3TY" id="Td6-oL-kwv"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="silver_coins" width="24" height="24"/>
+        <image name="star" width="24" height="24"/>
+    </resources>
+</document>

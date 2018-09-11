@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TankCollectionViewCell" id="gTV-IL-0wX" customClass="TankCollectionViewCell" customModule="rxswiftExampleApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FyI-eR-n5D" customClass="TriangleView" customModule="rxswiftExampleApp" customModuleProvider="target">
+                        <rect key="frame" x="289" y="0.0" width="30" height="30"/>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="9aW-Cl-smx"/>
+                            <constraint firstAttribute="height" constant="30" id="ymk-py-bKi"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iDn-IF-WNj">
+                        <rect key="frame" x="0.0" y="10" width="95.5" height="56"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tankmediumTank" translatesAutoresizingMaskIntoConstraints="NO" id="7kA-Ac-t5Z">
+                        <rect key="frame" x="120.5" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="GAD-Ya-61W"/>
+                            <constraint firstAttribute="height" constant="20" id="ZUm-y5-Vmk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object 705" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lry-gh-hoK">
+                        <rect key="frame" x="100.5" y="32" width="208.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91r-dM-kgc">
+                        <rect key="frame" x="140.5" y="14" width="7" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="0.92052986880147758" blue="0.012785820803970505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8wV-zr-eW8">
+                        <rect key="frame" x="100.5" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="KC9-on-hjF"/>
+                            <constraint firstAttribute="width" constant="20" id="gOS-XT-xl6"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="zrH-PE-vVo">
+                        <rect key="frame" x="309" y="0.0" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Ai8-4Q-TrQ"/>
+                            <constraint firstAttribute="width" constant="10" id="LFR-dH-qrJ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="lry-gh-hoK" secondAttribute="trailing" constant="10" id="1EG-qc-UG1"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lry-gh-hoK" secondAttribute="bottom" constant="5" id="1ia-Fr-ARl"/>
+                <constraint firstItem="7kA-Ac-t5Z" firstAttribute="centerY" secondItem="8wV-zr-eW8" secondAttribute="centerY" id="1jv-7L-BaG"/>
+                <constraint firstItem="91r-dM-kgc" firstAttribute="leading" secondItem="7kA-Ac-t5Z" secondAttribute="trailing" id="57Q-X2-bMf"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="zrH-PE-vVo" secondAttribute="trailing" id="7Mi-EF-Hgv"/>
+                <constraint firstItem="iDn-IF-WNj" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.3" id="EGJ-CM-mVT"/>
+                <constraint firstItem="iDn-IF-WNj" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="FOM-aP-3UF"/>
+                <constraint firstItem="8wV-zr-eW8" firstAttribute="leading" secondItem="iDn-IF-WNj" secondAttribute="trailing" constant="5" id="FXf-ee-Un2"/>
+                <constraint firstItem="8wV-zr-eW8" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="10" id="R7u-Tu-HOQ"/>
+                <constraint firstItem="91r-dM-kgc" firstAttribute="centerY" secondItem="7kA-Ac-t5Z" secondAttribute="centerY" id="SIN-HU-Pca"/>
+                <constraint firstItem="lry-gh-hoK" firstAttribute="leading" secondItem="8wV-zr-eW8" secondAttribute="trailing" constant="-20" id="SUR-wg-6te"/>
+                <constraint firstItem="iDn-IF-WNj" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.8" id="TlW-gw-Ckq"/>
+                <constraint firstItem="iDn-IF-WNj" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="10" id="Wb0-Wz-QHt"/>
+                <constraint firstItem="7kA-Ac-t5Z" firstAttribute="leading" secondItem="8wV-zr-eW8" secondAttribute="trailing" id="WeV-oF-we1"/>
+                <constraint firstItem="lry-gh-hoK" firstAttribute="top" secondItem="8wV-zr-eW8" secondAttribute="bottom" constant="2" id="g1L-J1-0kp"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="FyI-eR-n5D" secondAttribute="trailing" id="iKJ-Uu-nEw"/>
+                <constraint firstItem="zrH-PE-vVo" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="iTO-s5-xt5"/>
+                <constraint firstItem="FyI-eR-n5D" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="l6V-Bw-k4d"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="319" height="70"/>
+            <connections>
+                <outlet property="isPremiumImageView" destination="zrH-PE-vVo" id="wNo-rw-R8w"/>
+                <outlet property="nationImageView" destination="8wV-zr-eW8" id="OFg-Lw-sB0"/>
+                <outlet property="tankImageView" destination="iDn-IF-WNj" id="2Gy-gt-Cb5"/>
+                <outlet property="tankNameLabel" destination="lry-gh-hoK" id="0dN-fb-s1F"/>
+                <outlet property="tankTypeImageView" destination="7kA-Ac-t5Z" id="0fb-JY-Unw"/>
+                <outlet property="tierLabel" destination="91r-dM-kgc" id="16L-C8-YMV"/>
+                <outlet property="triangleView" destination="FyI-eR-n5D" id="lbx-lx-lty"/>
+            </connections>
+            <point key="canvasLocation" x="176.5" y="36"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="coins" width="16" height="16"/>
+        <image name="tankmediumTank" width="34" height="38"/>
+    </resources>
+</document>

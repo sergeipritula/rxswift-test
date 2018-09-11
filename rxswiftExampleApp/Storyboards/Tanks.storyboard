@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Evq-d0-d5h">
+            <objects>
+                <navigationController storyboardIdentifier="homeNav" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5xt-if-SZz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XUh-aC-TTl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FYa-tX-th5" kind="relationship" relationship="rootViewController" id="g4D-Si-AuL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSO-0k-qjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="96"/>
+        </scene>
+        <!--Tanks Card List View Controller-->
+        <scene sceneID="mFj-bN-aYl">
+            <objects>
+                <viewController storyboardIdentifier="TanksCardListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wc2-Yk-Hx1" customClass="TanksCardListViewController" customModule="rxswiftExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dmc-GA-ZwF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-GP-vfZ" customClass="TankCardView" customModule="rxswiftExampleApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="50" width="335" height="240"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="eJE-9P-Mzp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qE4-GP-vfZ" firstAttribute="top" secondItem="YEf-qb-6fS" secondAttribute="top" constant="30" id="RgA-qE-zjq"/>
+                            <constraint firstItem="YEf-qb-6fS" firstAttribute="trailing" secondItem="qE4-GP-vfZ" secondAttribute="trailing" constant="20" id="WGw-ch-hOX"/>
+                            <constraint firstItem="qE4-GP-vfZ" firstAttribute="leading" secondItem="YEf-qb-6fS" secondAttribute="leading" constant="20" id="j7x-jz-JOg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YEf-qb-6fS"/>
+                    </view>
+                    <connections>
+                        <outlet property="tankCardView" destination="qE4-GP-vfZ" id="jJ8-vC-KR6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D7C-B9-mkS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607" y="770"/>
+        </scene>
+        <!--Tanks List View Controller-->
+        <scene sceneID="ivP-ZN-kn5">
+            <objects>
+                <viewController storyboardIdentifier="TanksListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FYa-tX-th5" customClass="TanksListViewController" customModule="rxswiftExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qcN-Et-LD1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ozv-uP-KQY">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="TNe-Bh-ZL5">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ozv-uP-KQY" firstAttribute="top" secondItem="hfY-4b-59M" secondAttribute="top" id="0Xp-JG-o5h"/>
+                            <constraint firstItem="Ozv-uP-KQY" firstAttribute="leading" secondItem="hfY-4b-59M" secondAttribute="leading" id="9LD-r6-3rX"/>
+                            <constraint firstItem="hfY-4b-59M" firstAttribute="bottom" secondItem="Ozv-uP-KQY" secondAttribute="bottom" id="UGA-ht-AJf"/>
+                            <constraint firstItem="hfY-4b-59M" firstAttribute="trailing" secondItem="Ozv-uP-KQY" secondAttribute="trailing" id="g17-l5-hz7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfY-4b-59M"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wmq-hv-56a"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Ozv-uP-KQY" id="YYF-mI-qbM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEr-Oa-EyS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="96"/>
+        </scene>
+        <!--Tank Details View Controller-->
+        <scene sceneID="eM2-e8-qOu">
+            <objects>
+                <viewController storyboardIdentifier="TankDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oEd-na-of2" customClass="TankDetailsViewController" customModule="rxswiftExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ho5-dz-k0z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fc-x3-mVB" customClass="TankDetailsHeaderView" customModule="rxswiftExampleApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Qig-ho-TCw"/>
+                                </constraints>
+                            </view>
+                            <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sMX-ME-8NA">
+                                <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3fc-x3-mVB" firstAttribute="top" secondItem="kf6-dD-oxc" secondAttribute="top" id="CeI-0u-oBd"/>
+                            <constraint firstItem="kf6-dD-oxc" firstAttribute="bottom" secondItem="sMX-ME-8NA" secondAttribute="bottom" id="J7Q-AA-OZe"/>
+                            <constraint firstItem="sMX-ME-8NA" firstAttribute="top" secondItem="3fc-x3-mVB" secondAttribute="bottom" id="UaM-uC-d5T"/>
+                            <constraint firstItem="3fc-x3-mVB" firstAttribute="leading" secondItem="kf6-dD-oxc" secondAttribute="leading" id="g9E-hO-Xl6"/>
+                            <constraint firstItem="kf6-dD-oxc" firstAttribute="trailing" secondItem="3fc-x3-mVB" secondAttribute="trailing" id="hiS-Qv-NeH"/>
+                            <constraint firstItem="sMX-ME-8NA" firstAttribute="leading" secondItem="kf6-dD-oxc" secondAttribute="leading" id="iqV-BW-Sb8"/>
+                            <constraint firstItem="kf6-dD-oxc" firstAttribute="trailing" secondItem="sMX-ME-8NA" secondAttribute="trailing" id="mOV-re-n5x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kf6-dD-oxc"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="sMX-ME-8NA" id="nAc-13-hCU"/>
+                        <outlet property="tankDetailsHeaderView" destination="3fc-x3-mVB" id="j3s-xp-EPL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KMy-A0-lCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="96"/>
+        </scene>
+        <!--Info Modal Popup View Controller-->
+        <scene sceneID="f7s-nJ-Wa6">
+            <objects>
+                <viewController storyboardIdentifier="InfoModalPopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4nP-z8-Pl0" customClass="InfoModalPopupViewController" customModule="rxswiftExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rk3-nG-AfE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="wqS-yS-hM6"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="n0f-Hb-hTa" appends="YES" id="7S2-6Z-Mko"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UmN-6o-zFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="n0f-Hb-hTa">
+                    <connections>
+                        <action selector="handleTap:" destination="4nP-z8-Pl0" id="y3p-ba-zCu"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1876" y="95.802098950524751"/>
+        </scene>
+        <!--Tanks Rating List View Controller-->
+        <scene sceneID="XiJ-q7-0p1">
+            <objects>
+                <viewController storyboardIdentifier="TanksRatingListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uGP-Gh-Xn8" customClass="TanksRatingListViewController" customModule="rxswiftExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iUz-66-zZd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Ui-Mx-E6V">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Ui-Mx-E6V" firstAttribute="leading" secondItem="8Wg-MB-uYZ" secondAttribute="leading" id="9TA-C3-HsX"/>
+                            <constraint firstItem="8Wg-MB-uYZ" firstAttribute="bottom" secondItem="7Ui-Mx-E6V" secondAttribute="bottom" id="Mvt-Lk-0cY"/>
+                            <constraint firstItem="7Ui-Mx-E6V" firstAttribute="top" secondItem="8Wg-MB-uYZ" secondAttribute="top" id="f6R-hx-9E4"/>
+                            <constraint firstItem="8Wg-MB-uYZ" firstAttribute="trailing" secondItem="7Ui-Mx-E6V" secondAttribute="trailing" id="t2b-B3-Ycj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Wg-MB-uYZ"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="7Ui-Mx-E6V" id="oAh-wk-JHw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXH-It-QAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-888"/>
+        </scene>
+        <!--Device Select View Controller-->
+        <scene sceneID="yC3-Dj-dqv">
+            <objects>
+                <viewController storyboardIdentifier="DeviceSelectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VpZ-oN-eGh" customClass="DeviceSelectViewController" customModule="rxswiftExampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTR-yH-Vf7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I9f-X6-8Bh">
+                                <rect key="frame" x="37.5" y="328.5" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.054901960784313725" green="0.15686274509803921" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HmQ-SF-iUk"/>
+                                    <constraint firstAttribute="height" constant="30" id="iEK-5A-foO"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="I9f-X6-8Bh" firstAttribute="centerX" secondItem="DJQ-mK-isI" secondAttribute="centerX" id="Ovo-fA-Bzq"/>
+                            <constraint firstItem="I9f-X6-8Bh" firstAttribute="centerY" secondItem="DJQ-mK-isI" secondAttribute="centerY" id="Qm5-Rx-3mv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DJQ-mK-isI"/>
+                    </view>
+                    <connections>
+                        <outlet property="heightConstraint" destination="iEK-5A-foO" id="VXM-4O-d4p"/>
+                        <outlet property="tableView" destination="I9f-X6-8Bh" id="J7B-CA-JrM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INO-zr-vGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uWf-W1-9n8">
+                    <connections>
+                        <action selector="handleTap:" destination="VpZ-oN-eGh" id="dCl-kN-rSI"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1876" y="-696.7016491754124"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,1312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9443298436A6CBF1FEDBD770 /* Pods_rxswiftExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BDC491C72CF9916481F696 /* Pods_rxswiftExampleApp.framework */; };
+		E5558022204EA8B2006DA40C /* TanksCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5558020204EA8B2006DA40C /* TanksCardCollectionViewCell.swift */; };
+		E5558023204EA8B2006DA40C /* TanksCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5558021204EA8B2006DA40C /* TanksCardCollectionViewCell.xib */; };
+		E5558026204EB998006DA40C /* SwipableCardViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5558025204EB998006DA40C /* SwipableCardViewDataSource.swift */; };
+		E5558028204EBB6B006DA40C /* SwipableCardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5558027204EBB6B006DA40C /* SwipableCardViewDelegate.swift */; };
+		E55C7A472044139700E8EC90 /* TanksAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C7A462044139700E8EC90 /* TanksAPI.swift */; };
+		E55C7A4920443DCA00E8EC90 /* MoyaTanksDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C7A4820443DCA00E8EC90 /* MoyaTanksDataProvider.swift */; };
+		E55C7A4C204440A300E8EC90 /* TanksDataProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C7A4B204440A300E8EC90 /* TanksDataProviderType.swift */; };
+		E55C7A512044431300E8EC90 /* AlamofireTanksDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C7A502044431300E8EC90 /* AlamofireTanksDataProvider.swift */; };
+		E55C7A5320444EBD00E8EC90 /* DefaultAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C7A5220444EBD00E8EC90 /* DefaultAlamofireManager.swift */; };
+		E55C7A56204461A400E8EC90 /* TanksFilterBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C7A55204461A400E8EC90 /* TanksFilterBundle.swift */; };
+		E55C7A592044691300E8EC90 /* TanksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C7A582044691300E8EC90 /* TanksRequest.swift */; };
+		E5624282202A08A5005DCAE8 /* ToastHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5624281202A08A5005DCAE8 /* ToastHelper.swift */; };
+		E56E99EB2031B341003C4B45 /* Turret.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E99EA2031B341003C4B45 /* Turret.swift */; };
+		E56E99ED2031B4E2003C4B45 /* Radio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E99EC2031B4E2003C4B45 /* Radio.swift */; };
+		E56E99EF2031B5E4003C4B45 /* Ammo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E99EE2031B5E4003C4B45 /* Ammo.swift */; };
+		E56E99F62031B8C7003C4B45 /* TankDetailsInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E99F42031B8C7003C4B45 /* TankDetailsInfoTableViewCell.swift */; };
+		E56E99F72031B8C7003C4B45 /* TankDetailsInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56E99F52031B8C7003C4B45 /* TankDetailsInfoTableViewCell.xib */; };
+		E56E99FB2031B8FE003C4B45 /* TankDetailsMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E99F92031B8FE003C4B45 /* TankDetailsMainTableViewCell.swift */; };
+		E56E99FC2031B8FE003C4B45 /* TankDetailsMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56E99FA2031B8FE003C4B45 /* TankDetailsMainTableViewCell.xib */; };
+		E56E9A092031EE60003C4B45 /* TankDetailsMultipleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E9A082031EE60003C4B45 /* TankDetailsMultipleSection.swift */; };
+		E56E9A0B2031EF50003C4B45 /* TankDetailsHeaderSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E9A0A2031EF4F003C4B45 /* TankDetailsHeaderSectionViewModel.swift */; };
+		E56E9A0D2031EFA4003C4B45 /* TankDetailsArmamentSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E9A0C2031EFA4003C4B45 /* TankDetailsArmamentSectionViewModel.swift */; };
+		E56E9A0F2031EFB3003C4B45 /* TankDetailsArmorSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E9A0E2031EFB3003C4B45 /* TankDetailsArmorSectionViewModel.swift */; };
+		E57AAFC2203C1D6B00C2B724 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFC1203C1D6B00C2B724 /* Device.swift */; };
+		E57AAFC4203C422800C2B724 /* VehicleListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFC3203C422800C2B724 /* VehicleListDataProvider.swift */; };
+		E57AAFC8203C583B00C2B724 /* PropertyCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFC7203C583B00C2B724 /* PropertyCharacteristic.swift */; };
+		E57AAFCB203C65A900C2B724 /* TanksRatingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFCA203C65A900C2B724 /* TanksRatingListViewController.swift */; };
+		E57AAFCD203C65BD00C2B724 /* TanksRatingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFCC203C65BD00C2B724 /* TanksRatingListViewModel.swift */; };
+		E57AAFCF203C65CF00C2B724 /* TanksRatingListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFCE203C65CF00C2B724 /* TanksRatingListNavigator.swift */; };
+		E57AAFD3203C697F00C2B724 /* TankRatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFD1203C697F00C2B724 /* TankRatingTableViewCell.swift */; };
+		E57AAFD4203C697F00C2B724 /* TankRatingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E57AAFD2203C697F00C2B724 /* TankRatingTableViewCell.xib */; };
+		E57AAFD6203C69F500C2B724 /* TanksRatingListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AAFD5203C69F500C2B724 /* TanksRatingListItemViewModel.swift */; };
+		E57AF76B2032D97100640C54 /* TankDetailsInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AF76A2032D97100640C54 /* TankDetailsInfoViewModel.swift */; };
+		E57AF76D2032D9A600640C54 /* TankMainInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57AF76C2032D9A600640C54 /* TankMainInfoViewModel.swift */; };
+		E57C9F33203F2A26001F9A7F /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57C9F32203F2A26001F9A7F /* NSMutableAttributedString.swift */; };
+		E57D71A42036E6EA0010094C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D71A32036E6EA0010094C /* Style.swift */; };
+		E57D71A62036E75B0010094C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D71A52036E75B0010094C /* UIColor+Hex.swift */; };
+		E57D71AA2036F8F10010094C /* DeviceSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57D71A82036F8F10010094C /* DeviceSelectTableViewCell.swift */; };
+		E57D71AB2036F8F10010094C /* DeviceSelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E57D71A92036F8F10010094C /* DeviceSelectTableViewCell.xib */; };
+		E57F162B201F332400FE39B7 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F162A201F332400FE39B7 /* BaseRequest.swift */; };
+		E57F58C5201097A40004380B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F58C4201097A40004380B /* AppDelegate.swift */; };
+		E57F58CA201097A40004380B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57F58C8201097A40004380B /* Main.storyboard */; };
+		E57F58CC201097A40004380B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E57F58CB201097A40004380B /* Assets.xcassets */; };
+		E57F58CF201097A40004380B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E57F58CD201097A40004380B /* LaunchScreen.storyboard */; };
+		E57FC16420456534009A9AA4 /* TanksListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC16020456534009A9AA4 /* TanksListItemViewModel.swift */; };
+		E57FC16520456534009A9AA4 /* TanksListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC16120456534009A9AA4 /* TanksListNavigator.swift */; };
+		E57FC16620456534009A9AA4 /* TanksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC16220456534009A9AA4 /* TanksListViewController.swift */; };
+		E57FC16720456534009A9AA4 /* TanksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC16320456534009A9AA4 /* TanksListViewModel.swift */; };
+		E57FC16920456616009A9AA4 /* TankDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC16820456616009A9AA4 /* TankDetailsViewModel.swift */; };
+		E57FC16E20458483009A9AA4 /* AlamofireTankDetailsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC16D20458483009A9AA4 /* AlamofireTankDetailsDataProvider.swift */; };
+		E57FC17020458497009A9AA4 /* MoyaTankDetailsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC16F20458497009A9AA4 /* MoyaTankDetailsDataProvider.swift */; };
+		E57FC172204584B7009A9AA4 /* TankDetailsDataProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC171204584B7009A9AA4 /* TankDetailsDataProviderType.swift */; };
+		E57FC176204584D1009A9AA4 /* TankDetailRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FC175204584D1009A9AA4 /* TankDetailRequest.swift */; };
+		E57FF0F9204E982000FB31FF /* TanksCardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0F8204E982000FB31FF /* TanksCardListViewController.swift */; };
+		E57FF0FB204E982F00FB31FF /* TanksCardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0FA204E982F00FB31FF /* TanksCardListViewModel.swift */; };
+		E57FF0FD204E984100FB31FF /* TanksCardListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0FC204E984100FB31FF /* TanksCardListItemViewModel.swift */; };
+		E57FF0FF204E985000FB31FF /* TanksCardListNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF0FE204E985000FB31FF /* TanksCardListNavigator.swift */; };
+		E57FF102204E9B4700FB31FF /* TankCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E57FF101204E9B4700FB31FF /* TankCardView.xib */; };
+		E57FF104204E9B5500FB31FF /* TankCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57FF103204E9B5500FB31FF /* TankCardView.swift */; };
+		E580401D202D9F19000FE526 /* TankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580401B202D9F19000FE526 /* TankCollectionViewCell.swift */; };
+		E580401E202D9F19000FE526 /* TankCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E580401C202D9F19000FE526 /* TankCollectionViewCell.xib */; };
+		E5804021202DA6B6000FE526 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5804020202DA6B6000FE526 /* String.swift */; };
+		E5804023202DABD9000FE526 /* Tanks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5804022202DABD9000FE526 /* Tanks.storyboard */; };
+		E5804026202DEE7C000FE526 /* TankDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5804025202DEE7C000FE526 /* TankDetailsViewController.swift */; };
+		E580402A202DEE9C000FE526 /* TankDetailsNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5804029202DEE9C000FE526 /* TankDetailsNavigator.swift */; };
+		E580402C202DF1BC000FE526 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580402B202DF1BC000FE526 /* UIImage.swift */; };
+		E580402F202DF550000FE526 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E580402E202DF550000FE526 /* TriangleView.swift */; };
+		E581B56B20343E9C005D6572 /* InfoModalPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581B56A20343E9C005D6572 /* InfoModalPopupViewController.swift */; };
+		E581B56D20343ECE005D6572 /* InfoModalPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581B56C20343ECE005D6572 /* InfoModalPopupViewModel.swift */; };
+		E581B56F20343F0F005D6572 /* InfoModalPopupNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581B56E20343F0F005D6572 /* InfoModalPopupNavigator.swift */; };
+		E581B571203472AC005D6572 /* TankDetailsRangeSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E581B570203472AC005D6572 /* TankDetailsRangeSectionViewModel.swift */; };
+		E58306742019EC550052E605 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58306732019EC550052E605 /* AppCoordinator.swift */; };
+		E58306772019ECDF0052E605 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58306762019ECDF0052E605 /* MainFlowCoordinator.swift */; };
+		E58334352021BC2700A3BF6A /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58334342021BC2700A3BF6A /* Equipment.swift */; };
+		E58334472021C47B00A3BF6A /* EquipmentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58334462021C47B00A3BF6A /* EquipmentList.swift */; };
+		E58334492021C5FF00A3BF6A /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58334482021C5FF00A3BF6A /* Meta.swift */; };
+		E583344D2021CA2D00A3BF6A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583344C2021CA2D00A3BF6A /* Images.swift */; };
+		E583640A204952A00064F642 /* TankDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5836409204952A00064F642 /* TankDetailsHeaderView.swift */; };
+		E5836414204962A40064F642 /* TankDetailsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5836413204962A40064F642 /* TankDetailsHeaderView.xib */; };
+		E5836417204966E20064F642 /* TankDetailsHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5836416204966E20064F642 /* TankDetailsHeaderViewModel.swift */; };
+		E583641920497E4E0064F642 /* ModulesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583641820497E4E0064F642 /* ModulesConfiguration.swift */; };
+		E583C25A2046AD2C007E456C /* AlamofireVehicleCharacteristicDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583C2592046AD2C007E456C /* AlamofireVehicleCharacteristicDataProvider.swift */; };
+		E583C25C2046AD41007E456C /* MoyaVehicleCharacteristicDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583C25B2046AD41007E456C /* MoyaVehicleCharacteristicDataProvider.swift */; };
+		E583C25E2046AD74007E456C /* VehicleCharacteristicDataProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583C25D2046AD74007E456C /* VehicleCharacteristicDataProviderType.swift */; };
+		E583C2602046ADB2007E456C /* VehicleCharactersticRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583C25F2046ADB2007E456C /* VehicleCharactersticRequest.swift */; };
+		E583C2622046DCED007E456C /* VehiclesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E583C2612046DCED007E456C /* VehiclesAPI.swift */; };
+		E58428F02035A4FE00846285 /* GunInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58428EF2035A4FE00846285 /* GunInfoView.xib */; };
+		E58428F22035A50900846285 /* GunInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58428F12035A50900846285 /* GunInfoView.swift */; };
+		E58428F52035A71400846285 /* EngineInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58428F42035A71400846285 /* EngineInfoView.xib */; };
+		E58428F72035A72800846285 /* EngineInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58428F62035A72800846285 /* EngineInfoView.swift */; };
+		E58428FA2035A90300846285 /* TurretInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58428F92035A90300846285 /* TurretInfoView.xib */; };
+		E58428FC2035A91100846285 /* TurretInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58428FB2035A91100846285 /* TurretInfoView.swift */; };
+		E593382F2035AE7C0098FBA9 /* SuspensionInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E593382E2035AE7C0098FBA9 /* SuspensionInfoView.xib */; };
+		E59338312035AE8D0098FBA9 /* SuspensionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59338302035AE8D0098FBA9 /* SuspensionInfoView.swift */; };
+		E59338342035B7F80098FBA9 /* RadioInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E59338332035B7F80098FBA9 /* RadioInfoView.xib */; };
+		E59338362035B8050098FBA9 /* RadioInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59338352035B8050098FBA9 /* RadioInfoView.swift */; };
+		E59338382035C1800098FBA9 /* VehicleCharacteristicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59338372035C1800098FBA9 /* VehicleCharacteristicRequest.swift */; };
+		E593383C2035CA8E0098FBA9 /* DefaultProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593383B2035CA8E0098FBA9 /* DefaultProfileData.swift */; };
+		E593383F2035F5DD0098FBA9 /* DeviceSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E593383E2035F5DD0098FBA9 /* DeviceSelectViewController.swift */; };
+		E59338412035F6020098FBA9 /* DeviceSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59338402035F6020098FBA9 /* DeviceSelectViewModel.swift */; };
+		E59338432035F64C0098FBA9 /* DeviceSelectNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59338422035F64C0098FBA9 /* DeviceSelectNavigator.swift */; };
+		E59338452035F6F10098FBA9 /* DeviceSelectItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59338442035F6F10098FBA9 /* DeviceSelectItemViewModel.swift */; };
+		E5A1A0E02031926F00E113FA /* DefaultProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0DF2031926F00E113FA /* DefaultProfile.swift */; };
+		E5A1A0E2203198D900E113FA /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0E1203198D900E113FA /* Engine.swift */; };
+		E5A1A0E42031A2F200E113FA /* Suspension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0E32031A2F200E113FA /* Suspension.swift */; };
+		E5A1A0E62031A63A00E113FA /* TurretAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0E52031A63A00E113FA /* TurretAdditions.swift */; };
+		E5A1A0E82031A64400E113FA /* Hull.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0E72031A64400E113FA /* Hull.swift */; };
+		E5A1A0EA2031A64F00E113FA /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0E92031A64F00E113FA /* Armor.swift */; };
+		E5A1A0EC2031A89500E113FA /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0EB2031A89500E113FA /* Modules.swift */; };
+		E5A1A0EE2031AF7200E113FA /* Gun.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A1A0ED2031AF7200E113FA /* Gun.swift */; };
+		E5B04C3E2018DFBC00E44E4D /* AnimationRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B04C3D2018DFBC00E44E4D /* AnimationRenderer.swift */; };
+		E5B3841C203B32F8005EDC20 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3841B203B32F8005EDC20 /* Person.swift */; };
+		E5CB5A65202340B8004797CE /* EquipmentAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB5A64202340B8004797CE /* EquipmentAttribute.swift */; };
+		E5CB5A67202345F0004797CE /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB5A66202345F0004797CE /* UIImage+Color.swift */; };
+		E5E047FD201601C100A9FB0D /* ActivityIndicatorRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E047FC201601C100A9FB0D /* ActivityIndicatorRenderer.swift */; };
+		E5E593A1202E0BBC00F0DF82 /* TankDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E593A0202E0BBC00F0DF82 /* TankDetails.swift */; };
+		E5F6FB272032FAF8001EA949 /* GunProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FB262032FAF8001EA949 /* GunProperties.swift */; };
+		E5F6FB29203300FD001EA949 /* TankDetailsMobilitySectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FB28203300FD001EA949 /* TankDetailsMobilitySectionViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		173A850527181613DC509617 /* Pods-rxswiftExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxswiftExampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rxswiftExampleApp/Pods-rxswiftExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		45BDC491C72CF9916481F696 /* Pods_rxswiftExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rxswiftExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AC392F867B22E7B2FF2668 /* Pods-rxswiftExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rxswiftExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-rxswiftExampleApp/Pods-rxswiftExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		E5558020204EA8B2006DA40C /* TanksCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		E5558021204EA8B2006DA40C /* TanksCardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TanksCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5558025204EB998006DA40C /* SwipableCardViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableCardViewDataSource.swift; sourceTree = "<group>"; };
+		E5558027204EBB6B006DA40C /* SwipableCardViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableCardViewDelegate.swift; sourceTree = "<group>"; };
+		E55C7A462044139700E8EC90 /* TanksAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksAPI.swift; sourceTree = "<group>"; };
+		E55C7A4820443DCA00E8EC90 /* MoyaTanksDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaTanksDataProvider.swift; sourceTree = "<group>"; };
+		E55C7A4B204440A300E8EC90 /* TanksDataProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksDataProviderType.swift; sourceTree = "<group>"; };
+		E55C7A502044431300E8EC90 /* AlamofireTanksDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireTanksDataProvider.swift; sourceTree = "<group>"; };
+		E55C7A5220444EBD00E8EC90 /* DefaultAlamofireManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlamofireManager.swift; sourceTree = "<group>"; };
+		E55C7A55204461A400E8EC90 /* TanksFilterBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksFilterBundle.swift; sourceTree = "<group>"; };
+		E55C7A582044691300E8EC90 /* TanksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksRequest.swift; sourceTree = "<group>"; };
+		E5624281202A08A5005DCAE8 /* ToastHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastHelper.swift; sourceTree = "<group>"; };
+		E56E99EA2031B341003C4B45 /* Turret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turret.swift; sourceTree = "<group>"; };
+		E56E99EC2031B4E2003C4B45 /* Radio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio.swift; sourceTree = "<group>"; };
+		E56E99EE2031B5E4003C4B45 /* Ammo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ammo.swift; sourceTree = "<group>"; };
+		E56E99F42031B8C7003C4B45 /* TankDetailsInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E56E99F52031B8C7003C4B45 /* TankDetailsInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TankDetailsInfoTableViewCell.xib; sourceTree = "<group>"; };
+		E56E99F92031B8FE003C4B45 /* TankDetailsMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsMainTableViewCell.swift; sourceTree = "<group>"; };
+		E56E99FA2031B8FE003C4B45 /* TankDetailsMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TankDetailsMainTableViewCell.xib; sourceTree = "<group>"; };
+		E56E9A082031EE60003C4B45 /* TankDetailsMultipleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsMultipleSection.swift; sourceTree = "<group>"; };
+		E56E9A0A2031EF4F003C4B45 /* TankDetailsHeaderSectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TankDetailsHeaderSectionViewModel.swift; sourceTree = "<group>"; };
+		E56E9A0C2031EFA4003C4B45 /* TankDetailsArmamentSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsArmamentSectionViewModel.swift; sourceTree = "<group>"; };
+		E56E9A0E2031EFB3003C4B45 /* TankDetailsArmorSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsArmorSectionViewModel.swift; sourceTree = "<group>"; };
+		E57AAFC1203C1D6B00C2B724 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		E57AAFC3203C422800C2B724 /* VehicleListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListDataProvider.swift; sourceTree = "<group>"; };
+		E57AAFC7203C583B00C2B724 /* PropertyCharacteristic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCharacteristic.swift; sourceTree = "<group>"; };
+		E57AAFCA203C65A900C2B724 /* TanksRatingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksRatingListViewController.swift; sourceTree = "<group>"; };
+		E57AAFCC203C65BD00C2B724 /* TanksRatingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksRatingListViewModel.swift; sourceTree = "<group>"; };
+		E57AAFCE203C65CF00C2B724 /* TanksRatingListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksRatingListNavigator.swift; sourceTree = "<group>"; };
+		E57AAFD1203C697F00C2B724 /* TankRatingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankRatingTableViewCell.swift; sourceTree = "<group>"; };
+		E57AAFD2203C697F00C2B724 /* TankRatingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TankRatingTableViewCell.xib; sourceTree = "<group>"; };
+		E57AAFD5203C69F500C2B724 /* TanksRatingListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksRatingListItemViewModel.swift; sourceTree = "<group>"; };
+		E57AF76A2032D97100640C54 /* TankDetailsInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsInfoViewModel.swift; sourceTree = "<group>"; };
+		E57AF76C2032D9A600640C54 /* TankMainInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankMainInfoViewModel.swift; sourceTree = "<group>"; };
+		E57C9F32203F2A26001F9A7F /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		E57D71A32036E6EA0010094C /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		E57D71A52036E75B0010094C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		E57D71A82036F8F10010094C /* DeviceSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSelectTableViewCell.swift; sourceTree = "<group>"; };
+		E57D71A92036F8F10010094C /* DeviceSelectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceSelectTableViewCell.xib; sourceTree = "<group>"; };
+		E57F162A201F332400FE39B7 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		E57F58C1201097A40004380B /* rxswiftExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rxswiftExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57F58C4201097A40004380B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E57F58C9201097A40004380B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E57F58CB201097A40004380B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E57F58CE201097A40004380B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E57F58D0201097A40004380B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E57FC16020456534009A9AA4 /* TanksListItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanksListItemViewModel.swift; sourceTree = "<group>"; };
+		E57FC16120456534009A9AA4 /* TanksListNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanksListNavigator.swift; sourceTree = "<group>"; };
+		E57FC16220456534009A9AA4 /* TanksListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanksListViewController.swift; sourceTree = "<group>"; };
+		E57FC16320456534009A9AA4 /* TanksListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanksListViewModel.swift; sourceTree = "<group>"; };
+		E57FC16820456616009A9AA4 /* TankDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TankDetailsViewModel.swift; sourceTree = "<group>"; };
+		E57FC16D20458483009A9AA4 /* AlamofireTankDetailsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTankDetailsDataProvider.swift; sourceTree = "<group>"; };
+		E57FC16F20458497009A9AA4 /* MoyaTankDetailsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaTankDetailsDataProvider.swift; sourceTree = "<group>"; };
+		E57FC171204584B7009A9AA4 /* TankDetailsDataProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsDataProviderType.swift; sourceTree = "<group>"; };
+		E57FC175204584D1009A9AA4 /* TankDetailRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailRequest.swift; sourceTree = "<group>"; };
+		E57FF0F8204E982000FB31FF /* TanksCardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksCardListViewController.swift; sourceTree = "<group>"; };
+		E57FF0FA204E982F00FB31FF /* TanksCardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksCardListViewModel.swift; sourceTree = "<group>"; };
+		E57FF0FC204E984100FB31FF /* TanksCardListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksCardListItemViewModel.swift; sourceTree = "<group>"; };
+		E57FF0FE204E985000FB31FF /* TanksCardListNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanksCardListNavigator.swift; sourceTree = "<group>"; };
+		E57FF101204E9B4700FB31FF /* TankCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TankCardView.xib; sourceTree = "<group>"; };
+		E57FF103204E9B5500FB31FF /* TankCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankCardView.swift; sourceTree = "<group>"; };
+		E580401B202D9F19000FE526 /* TankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankCollectionViewCell.swift; sourceTree = "<group>"; };
+		E580401C202D9F19000FE526 /* TankCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TankCollectionViewCell.xib; sourceTree = "<group>"; };
+		E5804020202DA6B6000FE526 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E5804022202DABD9000FE526 /* Tanks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tanks.storyboard; sourceTree = "<group>"; };
+		E5804025202DEE7C000FE526 /* TankDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsViewController.swift; sourceTree = "<group>"; };
+		E5804029202DEE9C000FE526 /* TankDetailsNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsNavigator.swift; sourceTree = "<group>"; };
+		E580402B202DF1BC000FE526 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E580402E202DF550000FE526 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		E581B56A20343E9C005D6572 /* InfoModalPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModalPopupViewController.swift; sourceTree = "<group>"; };
+		E581B56C20343ECE005D6572 /* InfoModalPopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModalPopupViewModel.swift; sourceTree = "<group>"; };
+		E581B56E20343F0F005D6572 /* InfoModalPopupNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModalPopupNavigator.swift; sourceTree = "<group>"; };
+		E581B570203472AC005D6572 /* TankDetailsRangeSectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TankDetailsRangeSectionViewModel.swift; sourceTree = "<group>"; };
+		E58306732019EC550052E605 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E58306762019ECDF0052E605 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		E58334342021BC2700A3BF6A /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		E58334462021C47B00A3BF6A /* EquipmentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentList.swift; sourceTree = "<group>"; };
+		E58334482021C5FF00A3BF6A /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		E583344C2021CA2D00A3BF6A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		E5836409204952A00064F642 /* TankDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsHeaderView.swift; sourceTree = "<group>"; };
+		E5836413204962A40064F642 /* TankDetailsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TankDetailsHeaderView.xib; sourceTree = "<group>"; };
+		E5836416204966E20064F642 /* TankDetailsHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsHeaderViewModel.swift; sourceTree = "<group>"; };
+		E583641820497E4E0064F642 /* ModulesConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesConfiguration.swift; sourceTree = "<group>"; };
+		E583C2592046AD2C007E456C /* AlamofireVehicleCharacteristicDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireVehicleCharacteristicDataProvider.swift; sourceTree = "<group>"; };
+		E583C25B2046AD41007E456C /* MoyaVehicleCharacteristicDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaVehicleCharacteristicDataProvider.swift; sourceTree = "<group>"; };
+		E583C25D2046AD74007E456C /* VehicleCharacteristicDataProviderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCharacteristicDataProviderType.swift; sourceTree = "<group>"; };
+		E583C25F2046ADB2007E456C /* VehicleCharactersticRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCharactersticRequest.swift; sourceTree = "<group>"; };
+		E583C2612046DCED007E456C /* VehiclesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesAPI.swift; sourceTree = "<group>"; };
+		E58428EF2035A4FE00846285 /* GunInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GunInfoView.xib; sourceTree = "<group>"; };
+		E58428F12035A50900846285 /* GunInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunInfoView.swift; sourceTree = "<group>"; };
+		E58428F42035A71400846285 /* EngineInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EngineInfoView.xib; sourceTree = "<group>"; };
+		E58428F62035A72800846285 /* EngineInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineInfoView.swift; sourceTree = "<group>"; };
+		E58428F92035A90300846285 /* TurretInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TurretInfoView.xib; sourceTree = "<group>"; };
+		E58428FB2035A91100846285 /* TurretInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurretInfoView.swift; sourceTree = "<group>"; };
+		E593382E2035AE7C0098FBA9 /* SuspensionInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuspensionInfoView.xib; sourceTree = "<group>"; };
+		E59338302035AE8D0098FBA9 /* SuspensionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuspensionInfoView.swift; sourceTree = "<group>"; };
+		E59338332035B7F80098FBA9 /* RadioInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RadioInfoView.xib; sourceTree = "<group>"; };
+		E59338352035B8050098FBA9 /* RadioInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioInfoView.swift; sourceTree = "<group>"; };
+		E59338372035C1800098FBA9 /* VehicleCharacteristicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCharacteristicRequest.swift; sourceTree = "<group>"; };
+		E593383B2035CA8E0098FBA9 /* DefaultProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultProfileData.swift; sourceTree = "<group>"; };
+		E593383E2035F5DD0098FBA9 /* DeviceSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSelectViewController.swift; sourceTree = "<group>"; };
+		E59338402035F6020098FBA9 /* DeviceSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSelectViewModel.swift; sourceTree = "<group>"; };
+		E59338422035F64C0098FBA9 /* DeviceSelectNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSelectNavigator.swift; sourceTree = "<group>"; };
+		E59338442035F6F10098FBA9 /* DeviceSelectItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSelectItemViewModel.swift; sourceTree = "<group>"; };
+		E5A1A0DF2031926F00E113FA /* DefaultProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultProfile.swift; sourceTree = "<group>"; };
+		E5A1A0E1203198D900E113FA /* Engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		E5A1A0E32031A2F200E113FA /* Suspension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suspension.swift; sourceTree = "<group>"; };
+		E5A1A0E52031A63A00E113FA /* TurretAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurretAdditions.swift; sourceTree = "<group>"; };
+		E5A1A0E72031A64400E113FA /* Hull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hull.swift; sourceTree = "<group>"; };
+		E5A1A0E92031A64F00E113FA /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
+		E5A1A0EB2031A89500E113FA /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		E5A1A0ED2031AF7200E113FA /* Gun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gun.swift; sourceTree = "<group>"; };
+		E5B04C3D2018DFBC00E44E4D /* AnimationRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationRenderer.swift; sourceTree = "<group>"; };
+		E5B3841B203B32F8005EDC20 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E5CB5A64202340B8004797CE /* EquipmentAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentAttribute.swift; sourceTree = "<group>"; };
+		E5CB5A66202345F0004797CE /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		E5E047FC201601C100A9FB0D /* ActivityIndicatorRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorRenderer.swift; sourceTree = "<group>"; };
+		E5E593A0202E0BBC00F0DF82 /* TankDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetails.swift; sourceTree = "<group>"; };
+		E5F6FB262032FAF8001EA949 /* GunProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunProperties.swift; sourceTree = "<group>"; };
+		E5F6FB28203300FD001EA949 /* TankDetailsMobilitySectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TankDetailsMobilitySectionViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E57F58BE201097A40004380B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9443298436A6CBF1FEDBD770 /* Pods_rxswiftExampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2DE23F03D4D4CB981EC6997 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				173A850527181613DC509617 /* Pods-rxswiftExampleApp.debug.xcconfig */,
+				B3AC392F867B22E7B2FF2668 /* Pods-rxswiftExampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5FF84A7BDFBF586DEC90096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45BDC491C72CF9916481F696 /* Pods_rxswiftExampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E555801F204EA88D006DA40C /* TanksCardCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5558020204EA8B2006DA40C /* TanksCardCollectionViewCell.swift */,
+				E5558021204EA8B2006DA40C /* TanksCardCollectionViewCell.xib */,
+			);
+			path = TanksCardCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E5558024204EB982006DA40C /* SwipableCardView */ = {
+			isa = PBXGroup;
+			children = (
+				E5558029204EBB9C006DA40C /* Protocols */,
+			);
+			path = SwipableCardView;
+			sourceTree = "<group>";
+		};
+		E5558029204EBB9C006DA40C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E5558025204EB998006DA40C /* SwipableCardViewDataSource.swift */,
+				E5558027204EBB6B006DA40C /* SwipableCardViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E55C7A4A2044408D00E8EC90 /* TanksDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E55C7A4D204440EA00E8EC90 /* Protocols */,
+				E55C7A57204468FF00E8EC90 /* Requests */,
+				E55C7A542044619400E8EC90 /* Filter */,
+				E55C7A4820443DCA00E8EC90 /* MoyaTanksDataProvider.swift */,
+				E55C7A502044431300E8EC90 /* AlamofireTanksDataProvider.swift */,
+			);
+			path = TanksDataProvider;
+			sourceTree = "<group>";
+		};
+		E55C7A4D204440EA00E8EC90 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E55C7A4B204440A300E8EC90 /* TanksDataProviderType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E55C7A542044619400E8EC90 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				E55C7A55204461A400E8EC90 /* TanksFilterBundle.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		E55C7A57204468FF00E8EC90 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E55C7A462044139700E8EC90 /* TanksAPI.swift */,
+				E55C7A582044691300E8EC90 /* TanksRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E56E99F02031B66D003C4B45 /* DefaultProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E593383B2035CA8E0098FBA9 /* DefaultProfileData.swift */,
+				E5A1A0DF2031926F00E113FA /* DefaultProfile.swift */,
+				E5A1A0E1203198D900E113FA /* Engine.swift */,
+				E5A1A0E32031A2F200E113FA /* Suspension.swift */,
+				E5A1A0E92031A64F00E113FA /* Armor.swift */,
+				E5A1A0E52031A63A00E113FA /* TurretAdditions.swift */,
+				E5A1A0E72031A64400E113FA /* Hull.swift */,
+				E5A1A0EB2031A89500E113FA /* Modules.swift */,
+				E5A1A0ED2031AF7200E113FA /* Gun.swift */,
+				E56E99EA2031B341003C4B45 /* Turret.swift */,
+				E56E99EC2031B4E2003C4B45 /* Radio.swift */,
+				E56E99EE2031B5E4003C4B45 /* Ammo.swift */,
+			);
+			path = DefaultProfile;
+			sourceTree = "<group>";
+		};
+		E56E99F12031B891003C4B45 /* TankDetailsInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				E56E99F42031B8C7003C4B45 /* TankDetailsInfoTableViewCell.swift */,
+				E56E99F52031B8C7003C4B45 /* TankDetailsInfoTableViewCell.xib */,
+			);
+			path = TankDetailsInfoCell;
+			sourceTree = "<group>";
+		};
+		E56E99F82031B8E5003C4B45 /* TankDetailsMainCell */ = {
+			isa = PBXGroup;
+			children = (
+				E56E99F92031B8FE003C4B45 /* TankDetailsMainTableViewCell.swift */,
+				E56E99FA2031B8FE003C4B45 /* TankDetailsMainTableViewCell.xib */,
+			);
+			path = TankDetailsMainCell;
+			sourceTree = "<group>";
+		};
+		E57AAFC9203C657A00C2B724 /* TanksRatingListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E57AAFCE203C65CF00C2B724 /* TanksRatingListNavigator.swift */,
+				E57AAFCA203C65A900C2B724 /* TanksRatingListViewController.swift */,
+				E57AAFCC203C65BD00C2B724 /* TanksRatingListViewModel.swift */,
+				E57AAFD5203C69F500C2B724 /* TanksRatingListItemViewModel.swift */,
+			);
+			path = TanksRatingListViewController;
+			sourceTree = "<group>";
+		};
+		E57AAFD0203C696900C2B724 /* TankRatingCell */ = {
+			isa = PBXGroup;
+			children = (
+				E57AAFD1203C697F00C2B724 /* TankRatingTableViewCell.swift */,
+				E57AAFD2203C697F00C2B724 /* TankRatingTableViewCell.xib */,
+			);
+			path = TankRatingCell;
+			sourceTree = "<group>";
+		};
+		E57D71A72036F8D00010094C /* DeviceSelectTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E57D71A82036F8F10010094C /* DeviceSelectTableViewCell.swift */,
+				E57D71A92036F8F10010094C /* DeviceSelectTableViewCell.xib */,
+			);
+			path = DeviceSelectTableViewCell;
+			sourceTree = "<group>";
+		};
+		E57F58B8201097A40004380B = {
+			isa = PBXGroup;
+			children = (
+				E57F58C3201097A40004380B /* rxswiftExampleApp */,
+				E57F58C2201097A40004380B /* Products */,
+				A2DE23F03D4D4CB981EC6997 /* Pods */,
+				A5FF84A7BDFBF586DEC90096 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E57F58C2201097A40004380B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E57F58C1201097A40004380B /* rxswiftExampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E57F58C3201097A40004380B /* rxswiftExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				E580401F202DA6A6000FE526 /* Extensions */,
+				E5FA3E412010EB14003930E7 /* Resources */,
+				E583067C201A0E9B0052E605 /* Storyboards */,
+				E5E047FB201601AD00A9FB0D /* Helpers */,
+				E5FA3E402010EAF9003930E7 /* SupportedFiles */,
+				E58306752019EC980052E605 /* Coordinators */,
+				E57F58DE2010A4C70004380B /* Models */,
+				E57F58D82010998A0004380B /* Screens */,
+				E57F58D7201097BE0004380B /* Networking */,
+				E57F58D6201097B40004380B /* Views */,
+			);
+			path = rxswiftExampleApp;
+			sourceTree = "<group>";
+		};
+		E57F58D6201097B40004380B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5558024204EB982006DA40C /* SwipableCardView */,
+				E57FF100204E9B3500FB31FF /* TankCardView */,
+				E5836408204952820064F642 /* TankDetailsHeaderView */,
+				E59338322035B7DC0098FBA9 /* RadioInfoView */,
+				E593382D2035AE680098FBA9 /* SuspensionInfoView */,
+				E58428F82035A8F000846285 /* TurretInfoView */,
+				E58428F32035A70000846285 /* EngineInfoView */,
+				E58428EE2035A4E300846285 /* GunInfoView */,
+				E580402D202DF540000FE526 /* TriangleView */,
+				E57F58EA2010D62C0004380B /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E57F58D7201097BE0004380B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E57F58E32010ACA20004380B /* DataProviders */,
+				E57FC15A2045632C009A9AA4 /* Managers */,
+				E57FC159204562F7009A9AA4 /* Requests */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E57F58D82010998A0004380B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E57FF0F7204E980400FB31FF /* TanksCardListViewController */,
+				E57AAFC9203C657A00C2B724 /* TanksRatingListViewController */,
+				E593383D2035F5C30098FBA9 /* DeviceSelectViewController */,
+				E581B56920343E79005D6572 /* InfoModalPopupViewController */,
+				E5804024202DEE5F000FE526 /* TankDetailsViewController */,
+				E57FC15F20456534009A9AA4 /* TanksListViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E57F58DE2010A4C70004380B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E56E99F02031B66D003C4B45 /* DefaultProfile */,
+				E58334452021C46500A3BF6A /* Equipment */,
+				E5E593A0202E0BBC00F0DF82 /* TankDetails.swift */,
+				E5F6FB262032FAF8001EA949 /* GunProperties.swift */,
+				E583641820497E4E0064F642 /* ModulesConfiguration.swift */,
+				E5B3841B203B32F8005EDC20 /* Person.swift */,
+				E57AAFC1203C1D6B00C2B724 /* Device.swift */,
+				E57AAFC7203C583B00C2B724 /* PropertyCharacteristic.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E57F58E32010ACA20004380B /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				E55C7A4A2044408D00E8EC90 /* TanksDataProvider */,
+				E57FC16A20458430009A9AA4 /* TankDetailsDataProvider */,
+				E583C2562046ACF3007E456C /* VehicleCharacteristicDataProvider */,
+				E57AAFC3203C422800C2B724 /* VehicleListDataProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		E57F58EA2010D62C0004380B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E555801F204EA88D006DA40C /* TanksCardCollectionViewCell */,
+				E57AAFD0203C696900C2B724 /* TankRatingCell */,
+				E57D71A72036F8D00010094C /* DeviceSelectTableViewCell */,
+				E56E99F82031B8E5003C4B45 /* TankDetailsMainCell */,
+				E56E99F12031B891003C4B45 /* TankDetailsInfoCell */,
+				E580401A202D9EF3000FE526 /* TankCollectionViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E57FC159204562F7009A9AA4 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E57F162A201F332400FE39B7 /* BaseRequest.swift */,
+				E59338372035C1800098FBA9 /* VehicleCharacteristicRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E57FC15A2045632C009A9AA4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E55C7A5220444EBD00E8EC90 /* DefaultAlamofireManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E57FC15F20456534009A9AA4 /* TanksListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E57FC16120456534009A9AA4 /* TanksListNavigator.swift */,
+				E57FC16220456534009A9AA4 /* TanksListViewController.swift */,
+				E57FC16320456534009A9AA4 /* TanksListViewModel.swift */,
+				E57FC16020456534009A9AA4 /* TanksListItemViewModel.swift */,
+			);
+			name = TanksListViewController;
+			path = rxswiftExampleApp/Screens/TanksListViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		E57FC16A20458430009A9AA4 /* TankDetailsDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E57FC16C20458468009A9AA4 /* Requests */,
+				E57FC16B20458452009A9AA4 /* Protocols */,
+				E57FC16D20458483009A9AA4 /* AlamofireTankDetailsDataProvider.swift */,
+				E57FC16F20458497009A9AA4 /* MoyaTankDetailsDataProvider.swift */,
+			);
+			path = TankDetailsDataProvider;
+			sourceTree = "<group>";
+		};
+		E57FC16B20458452009A9AA4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E57FC171204584B7009A9AA4 /* TankDetailsDataProviderType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E57FC16C20458468009A9AA4 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E57FC175204584D1009A9AA4 /* TankDetailRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E57FF0F7204E980400FB31FF /* TanksCardListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E57FF0FE204E985000FB31FF /* TanksCardListNavigator.swift */,
+				E57FF0F8204E982000FB31FF /* TanksCardListViewController.swift */,
+				E57FF0FA204E982F00FB31FF /* TanksCardListViewModel.swift */,
+				E57FF0FC204E984100FB31FF /* TanksCardListItemViewModel.swift */,
+			);
+			path = TanksCardListViewController;
+			sourceTree = "<group>";
+		};
+		E57FF100204E9B3500FB31FF /* TankCardView */ = {
+			isa = PBXGroup;
+			children = (
+				E57FF103204E9B5500FB31FF /* TankCardView.swift */,
+				E57FF101204E9B4700FB31FF /* TankCardView.xib */,
+			);
+			path = TankCardView;
+			sourceTree = "<group>";
+		};
+		E580401A202D9EF3000FE526 /* TankCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E580401B202D9F19000FE526 /* TankCollectionViewCell.swift */,
+				E580401C202D9F19000FE526 /* TankCollectionViewCell.xib */,
+			);
+			path = TankCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		E580401F202DA6A6000FE526 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5804020202DA6B6000FE526 /* String.swift */,
+				E580402B202DF1BC000FE526 /* UIImage.swift */,
+				E57D71A32036E6EA0010094C /* Style.swift */,
+				E57D71A52036E75B0010094C /* UIColor+Hex.swift */,
+				E57C9F32203F2A26001F9A7F /* NSMutableAttributedString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E5804024202DEE5F000FE526 /* TankDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E5836415204966C80064F642 /* TankDetailsHeaderViewModel */,
+				E5B38418203B12CD005EDC20 /* TankDetailsItemsViewModel */,
+				E5B38417203B12BB005EDC20 /* TankDetailsSectionsViewModel */,
+				E5B38416203B1296005EDC20 /* TankDetailsMultipleSection */,
+				E5804029202DEE9C000FE526 /* TankDetailsNavigator.swift */,
+				E5804025202DEE7C000FE526 /* TankDetailsViewController.swift */,
+				E57FC16820456616009A9AA4 /* TankDetailsViewModel.swift */,
+			);
+			path = TankDetailsViewController;
+			sourceTree = "<group>";
+		};
+		E580402D202DF540000FE526 /* TriangleView */ = {
+			isa = PBXGroup;
+			children = (
+				E580402E202DF550000FE526 /* TriangleView.swift */,
+			);
+			path = TriangleView;
+			sourceTree = "<group>";
+		};
+		E581B56920343E79005D6572 /* InfoModalPopupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E581B56E20343F0F005D6572 /* InfoModalPopupNavigator.swift */,
+				E581B56A20343E9C005D6572 /* InfoModalPopupViewController.swift */,
+				E581B56C20343ECE005D6572 /* InfoModalPopupViewModel.swift */,
+			);
+			path = InfoModalPopupViewController;
+			sourceTree = "<group>";
+		};
+		E58306752019EC980052E605 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E58306732019EC550052E605 /* AppCoordinator.swift */,
+				E58306762019ECDF0052E605 /* MainFlowCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		E583067C201A0E9B0052E605 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E57F58C8201097A40004380B /* Main.storyboard */,
+				E57F58CD201097A40004380B /* LaunchScreen.storyboard */,
+				E5804022202DABD9000FE526 /* Tanks.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E58334452021C46500A3BF6A /* Equipment */ = {
+			isa = PBXGroup;
+			children = (
+				E58334342021BC2700A3BF6A /* Equipment.swift */,
+				E58334462021C47B00A3BF6A /* EquipmentList.swift */,
+				E5CB5A64202340B8004797CE /* EquipmentAttribute.swift */,
+				E583344C2021CA2D00A3BF6A /* Images.swift */,
+				E58334482021C5FF00A3BF6A /* Meta.swift */,
+			);
+			path = Equipment;
+			sourceTree = "<group>";
+		};
+		E5836408204952820064F642 /* TankDetailsHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				E5836409204952A00064F642 /* TankDetailsHeaderView.swift */,
+				E5836413204962A40064F642 /* TankDetailsHeaderView.xib */,
+			);
+			path = TankDetailsHeaderView;
+			sourceTree = "<group>";
+		};
+		E5836415204966C80064F642 /* TankDetailsHeaderViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5836416204966E20064F642 /* TankDetailsHeaderViewModel.swift */,
+			);
+			path = TankDetailsHeaderViewModel;
+			sourceTree = "<group>";
+		};
+		E583C2562046ACF3007E456C /* VehicleCharacteristicDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				E583C2582046AD15007E456C /* Protocols */,
+				E583C2572046AD0D007E456C /* Requests */,
+				E583C2592046AD2C007E456C /* AlamofireVehicleCharacteristicDataProvider.swift */,
+				E583C25B2046AD41007E456C /* MoyaVehicleCharacteristicDataProvider.swift */,
+			);
+			path = VehicleCharacteristicDataProvider;
+			sourceTree = "<group>";
+		};
+		E583C2572046AD0D007E456C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E583C2612046DCED007E456C /* VehiclesAPI.swift */,
+				E583C25F2046ADB2007E456C /* VehicleCharactersticRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E583C2582046AD15007E456C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E583C25D2046AD74007E456C /* VehicleCharacteristicDataProviderType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E58428EE2035A4E300846285 /* GunInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				E58428F12035A50900846285 /* GunInfoView.swift */,
+				E58428EF2035A4FE00846285 /* GunInfoView.xib */,
+			);
+			path = GunInfoView;
+			sourceTree = "<group>";
+		};
+		E58428F32035A70000846285 /* EngineInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				E58428F62035A72800846285 /* EngineInfoView.swift */,
+				E58428F42035A71400846285 /* EngineInfoView.xib */,
+			);
+			path = EngineInfoView;
+			sourceTree = "<group>";
+		};
+		E58428F82035A8F000846285 /* TurretInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				E58428FB2035A91100846285 /* TurretInfoView.swift */,
+				E58428F92035A90300846285 /* TurretInfoView.xib */,
+			);
+			path = TurretInfoView;
+			sourceTree = "<group>";
+		};
+		E593382D2035AE680098FBA9 /* SuspensionInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				E59338302035AE8D0098FBA9 /* SuspensionInfoView.swift */,
+				E593382E2035AE7C0098FBA9 /* SuspensionInfoView.xib */,
+			);
+			path = SuspensionInfoView;
+			sourceTree = "<group>";
+		};
+		E59338322035B7DC0098FBA9 /* RadioInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				E59338352035B8050098FBA9 /* RadioInfoView.swift */,
+				E59338332035B7F80098FBA9 /* RadioInfoView.xib */,
+			);
+			path = RadioInfoView;
+			sourceTree = "<group>";
+		};
+		E593383D2035F5C30098FBA9 /* DeviceSelectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E59338422035F64C0098FBA9 /* DeviceSelectNavigator.swift */,
+				E593383E2035F5DD0098FBA9 /* DeviceSelectViewController.swift */,
+				E59338402035F6020098FBA9 /* DeviceSelectViewModel.swift */,
+				E59338442035F6F10098FBA9 /* DeviceSelectItemViewModel.swift */,
+			);
+			path = DeviceSelectViewController;
+			sourceTree = "<group>";
+		};
+		E5B38416203B1296005EDC20 /* TankDetailsMultipleSection */ = {
+			isa = PBXGroup;
+			children = (
+				E56E9A082031EE60003C4B45 /* TankDetailsMultipleSection.swift */,
+			);
+			path = TankDetailsMultipleSection;
+			sourceTree = "<group>";
+		};
+		E5B38417203B12BB005EDC20 /* TankDetailsSectionsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E56E9A0A2031EF4F003C4B45 /* TankDetailsHeaderSectionViewModel.swift */,
+				E56E9A0C2031EFA4003C4B45 /* TankDetailsArmamentSectionViewModel.swift */,
+				E56E9A0E2031EFB3003C4B45 /* TankDetailsArmorSectionViewModel.swift */,
+				E5F6FB28203300FD001EA949 /* TankDetailsMobilitySectionViewModel.swift */,
+				E581B570203472AC005D6572 /* TankDetailsRangeSectionViewModel.swift */,
+			);
+			path = TankDetailsSectionsViewModel;
+			sourceTree = "<group>";
+		};
+		E5B38418203B12CD005EDC20 /* TankDetailsItemsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E57AF76C2032D9A600640C54 /* TankMainInfoViewModel.swift */,
+				E57AF76A2032D97100640C54 /* TankDetailsInfoViewModel.swift */,
+			);
+			path = TankDetailsItemsViewModel;
+			sourceTree = "<group>";
+		};
+		E5E047FB201601AD00A9FB0D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E5E047FC201601C100A9FB0D /* ActivityIndicatorRenderer.swift */,
+				E5B04C3D2018DFBC00E44E4D /* AnimationRenderer.swift */,
+				E5CB5A66202345F0004797CE /* UIImage+Color.swift */,
+				E5624281202A08A5005DCAE8 /* ToastHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E5FA3E402010EAF9003930E7 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E57F58D0201097A40004380B /* Info.plist */,
+				E57F58C4201097A40004380B /* AppDelegate.swift */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		E5FA3E412010EB14003930E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E57F58CB201097A40004380B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E57F58C0201097A40004380B /* rxswiftExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E57F58D3201097A40004380B /* Build configuration list for PBXNativeTarget "rxswiftExampleApp" */;
+			buildPhases = (
+				CC4903E79EDE9A67AD0DC649 /* [CP] Check Pods Manifest.lock */,
+				E57F58BD201097A40004380B /* Sources */,
+				E57F58BE201097A40004380B /* Frameworks */,
+				E57F58BF201097A40004380B /* Resources */,
+				511526384FF0FE3583E23FA7 /* [CP] Embed Pods Frameworks */,
+				D0DC16ADB91FF39C0F16E836 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rxswiftExampleApp;
+			productName = rxswiftExampleApp;
+			productReference = E57F58C1201097A40004380B /* rxswiftExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E57F58B9201097A40004380B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Serhiy;
+				TargetAttributes = {
+					E57F58C0201097A40004380B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E57F58BC201097A40004380B /* Build configuration list for PBXProject "rxswiftExampleApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E57F58B8201097A40004380B;
+			productRefGroup = E57F58C2201097A40004380B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E57F58C0201097A40004380B /* rxswiftExampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E57F58BF201097A40004380B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57AAFD4203C697F00C2B724 /* TankRatingTableViewCell.xib in Resources */,
+				E56E99F72031B8C7003C4B45 /* TankDetailsInfoTableViewCell.xib in Resources */,
+				E59338342035B7F80098FBA9 /* RadioInfoView.xib in Resources */,
+				E5804023202DABD9000FE526 /* Tanks.storyboard in Resources */,
+				E56E99FC2031B8FE003C4B45 /* TankDetailsMainTableViewCell.xib in Resources */,
+				E57F58CF201097A40004380B /* LaunchScreen.storyboard in Resources */,
+				E57D71AB2036F8F10010094C /* DeviceSelectTableViewCell.xib in Resources */,
+				E58428F52035A71400846285 /* EngineInfoView.xib in Resources */,
+				E57F58CC201097A40004380B /* Assets.xcassets in Resources */,
+				E5836414204962A40064F642 /* TankDetailsHeaderView.xib in Resources */,
+				E57FF102204E9B4700FB31FF /* TankCardView.xib in Resources */,
+				E58428F02035A4FE00846285 /* GunInfoView.xib in Resources */,
+				E5558023204EA8B2006DA40C /* TanksCardCollectionViewCell.xib in Resources */,
+				E593382F2035AE7C0098FBA9 /* SuspensionInfoView.xib in Resources */,
+				E57F58CA201097A40004380B /* Main.storyboard in Resources */,
+				E580401E202D9F19000FE526 /* TankCollectionViewCell.xib in Resources */,
+				E58428FA2035A90300846285 /* TurretInfoView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		511526384FF0FE3583E23FA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rxswiftExampleApp/Pods-rxswiftExampleApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCoreData/RxCoreData.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCoreData.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rxswiftExampleApp/Pods-rxswiftExampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4903E79EDE9A67AD0DC649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rxswiftExampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0DC16ADB91FF39C0F16E836 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rxswiftExampleApp/Pods-rxswiftExampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E57F58BD201097A40004380B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5A1A0E2203198D900E113FA /* Engine.swift in Sources */,
+				E5A1A0E42031A2F200E113FA /* Suspension.swift in Sources */,
+				E5A1A0EE2031AF7200E113FA /* Gun.swift in Sources */,
+				E56E99EB2031B341003C4B45 /* Turret.swift in Sources */,
+				E56E99ED2031B4E2003C4B45 /* Radio.swift in Sources */,
+				E56E99EF2031B5E4003C4B45 /* Ammo.swift in Sources */,
+				E5A1A0E62031A63A00E113FA /* TurretAdditions.swift in Sources */,
+				E5A1A0E82031A64400E113FA /* Hull.swift in Sources */,
+				E58334352021BC2700A3BF6A /* Equipment.swift in Sources */,
+				E5A1A0E02031926F00E113FA /* DefaultProfile.swift in Sources */,
+				E58334492021C5FF00A3BF6A /* Meta.swift in Sources */,
+				E58334472021C47B00A3BF6A /* EquipmentList.swift in Sources */,
+				E593383C2035CA8E0098FBA9 /* DefaultProfileData.swift in Sources */,
+				E5A1A0EA2031A64F00E113FA /* Armor.swift in Sources */,
+				E57AAFC2203C1D6B00C2B724 /* Device.swift in Sources */,
+				E57FC17020458497009A9AA4 /* MoyaTankDetailsDataProvider.swift in Sources */,
+				E57F162B201F332400FE39B7 /* BaseRequest.swift in Sources */,
+				E5E593A1202E0BBC00F0DF82 /* TankDetails.swift in Sources */,
+				E59338452035F6F10098FBA9 /* DeviceSelectItemViewModel.swift in Sources */,
+				E57AAFC4203C422800C2B724 /* VehicleListDataProvider.swift in Sources */,
+				E56E9A0F2031EFB3003C4B45 /* TankDetailsArmorSectionViewModel.swift in Sources */,
+				E57AAFD3203C697F00C2B724 /* TankRatingTableViewCell.swift in Sources */,
+				E59338362035B8050098FBA9 /* RadioInfoView.swift in Sources */,
+				E57FF0FD204E984100FB31FF /* TanksCardListItemViewModel.swift in Sources */,
+				E57FC16520456534009A9AA4 /* TanksListNavigator.swift in Sources */,
+				E57AAFC8203C583B00C2B724 /* PropertyCharacteristic.swift in Sources */,
+				E58428F22035A50900846285 /* GunInfoView.swift in Sources */,
+				E581B56D20343ECE005D6572 /* InfoModalPopupViewModel.swift in Sources */,
+				E5B3841C203B32F8005EDC20 /* Person.swift in Sources */,
+				E58306742019EC550052E605 /* AppCoordinator.swift in Sources */,
+				E580402C202DF1BC000FE526 /* UIImage.swift in Sources */,
+				E581B571203472AC005D6572 /* TankDetailsRangeSectionViewModel.swift in Sources */,
+				E58428FC2035A91100846285 /* TurretInfoView.swift in Sources */,
+				E5804021202DA6B6000FE526 /* String.swift in Sources */,
+				E580402A202DEE9C000FE526 /* TankDetailsNavigator.swift in Sources */,
+				E5558026204EB998006DA40C /* SwipableCardViewDataSource.swift in Sources */,
+				E57FC16420456534009A9AA4 /* TanksListItemViewModel.swift in Sources */,
+				E5558022204EA8B2006DA40C /* TanksCardCollectionViewCell.swift in Sources */,
+				E56E99F62031B8C7003C4B45 /* TankDetailsInfoTableViewCell.swift in Sources */,
+				E55C7A4C204440A300E8EC90 /* TanksDataProviderType.swift in Sources */,
+				E5B04C3E2018DFBC00E44E4D /* AnimationRenderer.swift in Sources */,
+				E57AAFD6203C69F500C2B724 /* TanksRatingListItemViewModel.swift in Sources */,
+				E58306772019ECDF0052E605 /* MainFlowCoordinator.swift in Sources */,
+				E583C25C2046AD41007E456C /* MoyaVehicleCharacteristicDataProvider.swift in Sources */,
+				E57FF104204E9B5500FB31FF /* TankCardView.swift in Sources */,
+				E5CB5A65202340B8004797CE /* EquipmentAttribute.swift in Sources */,
+				E57FC16920456616009A9AA4 /* TankDetailsViewModel.swift in Sources */,
+				E5F6FB272032FAF8001EA949 /* GunProperties.swift in Sources */,
+				E57FC16720456534009A9AA4 /* TanksListViewModel.swift in Sources */,
+				E56E99FB2031B8FE003C4B45 /* TankDetailsMainTableViewCell.swift in Sources */,
+				E57FC16620456534009A9AA4 /* TanksListViewController.swift in Sources */,
+				E57FC176204584D1009A9AA4 /* TankDetailRequest.swift in Sources */,
+				E55C7A56204461A400E8EC90 /* TanksFilterBundle.swift in Sources */,
+				E57D71A42036E6EA0010094C /* Style.swift in Sources */,
+				E5836417204966E20064F642 /* TankDetailsHeaderViewModel.swift in Sources */,
+				E56E9A0D2031EFA4003C4B45 /* TankDetailsArmamentSectionViewModel.swift in Sources */,
+				E57AAFCD203C65BD00C2B724 /* TanksRatingListViewModel.swift in Sources */,
+				E583640A204952A00064F642 /* TankDetailsHeaderView.swift in Sources */,
+				E57D71AA2036F8F10010094C /* DeviceSelectTableViewCell.swift in Sources */,
+				E55C7A472044139700E8EC90 /* TanksAPI.swift in Sources */,
+				E593383F2035F5DD0098FBA9 /* DeviceSelectViewController.swift in Sources */,
+				E55C7A512044431300E8EC90 /* AlamofireTanksDataProvider.swift in Sources */,
+				E55C7A5320444EBD00E8EC90 /* DefaultAlamofireManager.swift in Sources */,
+				E580402F202DF550000FE526 /* TriangleView.swift in Sources */,
+				E5558028204EBB6B006DA40C /* SwipableCardViewDelegate.swift in Sources */,
+				E57AF76B2032D97100640C54 /* TankDetailsInfoViewModel.swift in Sources */,
+				E5F6FB29203300FD001EA949 /* TankDetailsMobilitySectionViewModel.swift in Sources */,
+				E57AAFCF203C65CF00C2B724 /* TanksRatingListNavigator.swift in Sources */,
+				E580401D202D9F19000FE526 /* TankCollectionViewCell.swift in Sources */,
+				E59338312035AE8D0098FBA9 /* SuspensionInfoView.swift in Sources */,
+				E55C7A592044691300E8EC90 /* TanksRequest.swift in Sources */,
+				E583C25E2046AD74007E456C /* VehicleCharacteristicDataProviderType.swift in Sources */,
+				E583641920497E4E0064F642 /* ModulesConfiguration.swift in Sources */,
+				E56E9A092031EE60003C4B45 /* TankDetailsMultipleSection.swift in Sources */,
+				E59338412035F6020098FBA9 /* DeviceSelectViewModel.swift in Sources */,
+				E5CB5A67202345F0004797CE /* UIImage+Color.swift in Sources */,
+				E57FF0F9204E982000FB31FF /* TanksCardListViewController.swift in Sources */,
+				E583344D2021CA2D00A3BF6A /* Images.swift in Sources */,
+				E5804026202DEE7C000FE526 /* TankDetailsViewController.swift in Sources */,
+				E55C7A4920443DCA00E8EC90 /* MoyaTanksDataProvider.swift in Sources */,
+				E57FC172204584B7009A9AA4 /* TankDetailsDataProviderType.swift in Sources */,
+				E57AAFCB203C65A900C2B724 /* TanksRatingListViewController.swift in Sources */,
+				E5A1A0EC2031A89500E113FA /* Modules.swift in Sources */,
+				E57F58C5201097A40004380B /* AppDelegate.swift in Sources */,
+				E581B56B20343E9C005D6572 /* InfoModalPopupViewController.swift in Sources */,
+				E583C25A2046AD2C007E456C /* AlamofireVehicleCharacteristicDataProvider.swift in Sources */,
+				E56E9A0B2031EF50003C4B45 /* TankDetailsHeaderSectionViewModel.swift in Sources */,
+				E59338432035F64C0098FBA9 /* DeviceSelectNavigator.swift in Sources */,
+				E59338382035C1800098FBA9 /* VehicleCharacteristicRequest.swift in Sources */,
+				E5E047FD201601C100A9FB0D /* ActivityIndicatorRenderer.swift in Sources */,
+				E58428F72035A72800846285 /* EngineInfoView.swift in Sources */,
+				E583C2622046DCED007E456C /* VehiclesAPI.swift in Sources */,
+				E5624282202A08A5005DCAE8 /* ToastHelper.swift in Sources */,
+				E57FF0FF204E985000FB31FF /* TanksCardListNavigator.swift in Sources */,
+				E57AF76D2032D9A600640C54 /* TankMainInfoViewModel.swift in Sources */,
+				E57D71A62036E75B0010094C /* UIColor+Hex.swift in Sources */,
+				E583C2602046ADB2007E456C /* VehicleCharactersticRequest.swift in Sources */,
+				E57C9F33203F2A26001F9A7F /* NSMutableAttributedString.swift in Sources */,
+				E57FF0FB204E982F00FB31FF /* TanksCardListViewModel.swift in Sources */,
+				E57FC16E20458483009A9AA4 /* AlamofireTankDetailsDataProvider.swift in Sources */,
+				E581B56F20343F0F005D6572 /* InfoModalPopupNavigator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E57F58C8201097A40004380B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57F58C9201097A40004380B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E57F58CD201097A40004380B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E57F58CE201097A40004380B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E57F58D1201097A40004380B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E57F58D2201097A40004380B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E57F58D4201097A40004380B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 173A850527181613DC509617 /* Pods-rxswiftExampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYQ8VBQD5;
+				INFOPLIST_FILE = rxswiftExampleApp/SupportedFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.rxswiftExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E57F58D5201097A40004380B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3AC392F867B22E7B2FF2668 /* Pods-rxswiftExampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6WYQ8VBQD5;
+				INFOPLIST_FILE = rxswiftExampleApp/SupportedFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.rxswiftExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E57F58BC201097A40004380B /* Build configuration list for PBXProject "rxswiftExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57F58D1201097A40004380B /* Debug */,
+				E57F58D2201097A40004380B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E57F58D3201097A40004380B /* Build configuration list for PBXNativeTarget "rxswiftExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E57F58D4201097A40004380B /* Debug */,
+				E57F58D5201097A40004380B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E57F58B9201097A40004380B /* Project object */;
+}
